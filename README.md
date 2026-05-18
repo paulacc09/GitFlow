@@ -1,95 +1,71 @@
 # Nombre del Proyecto
 
-Git Flow Practice
+API de Practica Git Flow
 
 ## Descripción
 
-Repositorio plantilla para una práctica guiada de Git y Git Flow en cursos universitarios de Ingeniería de Software.
+Este proyecto es una mini API construida con Express para practicar Git Flow en una actividad guiada.
 
-La práctica crea issues progresivos para que cada estudiante trabaje ramas, Pull Requests, releases, tags, hotfixes, `git stash` y documentación sobre un proyecto pequeño y ejecutable.
-
-El proyecto base incluye una mini API en Express con un endpoint:
-
-```text
-GET /api/estado
-```
+La API tiene un endpoint de estado que permite comprobar que el servidor esta funcionando correctamente.
 
 ## Instalación
 
-Necesitas Node.js 20 o superior.
+Requisitos:
 
-Instala las dependencias:
+- Node.js 20 o superior.
+- npm.
 
-```bash
+Pasos:
+
+~~~bash
+git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git
+cd NOMBRE_DEL_REPO
 npm install
-```
-
-Para usarlo como estudiante:
-
-1. Crea un repositorio desde este template o haz fork.
-2. Entra a la pestaña **Actions**.
-3. Espera que se ejecute **Iniciar práctica** o ejecútalo manualmente si el primer issue no aparece.
-
-Para ejecutar validaciones localmente:
-
-```bash
-npm run validate:readme
-npm run validate:gitflow
-```
+~~~
 
 ## Uso
 
-Levanta la API localmente:
+Levantar el servidor local:
 
-```bash
+~~~bash
 npm start
-```
+~~~
 
-Abre el endpoint en el navegador o con `curl`:
+Probar el endpoint:
 
-```bash
+~~~bash
 curl http://localhost:3000/api/estado
-```
+~~~
 
-La respuesta esperada es un JSON parecido a este:
+Respuesta esperada:
 
-```json
+~~~json
 {
   "ok": true,
   "mensaje": "API de practica Git Flow funcionando",
   "version": "1.0.0"
 }
-```
+~~~
 
-El estudiante debe seguir los issues creados automáticamente en GitHub.
+Si usas navegador, abre:
 
-Los issues de misión no se cierran manualmente. El workflow **Validar progreso de misiones** los cierra cuando detecta que el criterio se cumplió; si alguien los cierra desde la interfaz de GitHub, **Proteger cierre de misiones** los reabre.
-
-El flujo general es:
-
-1. Crear `develop`.
-2. Crear ramas `feature/`.
-3. Practicar `git stash`.
-4. Completar el README explicando cómo levantar la API.
-5. Integrar cambios con Pull Requests.
-6. Crear una rama `release/`.
-7. Crear el tag `v1.0.0`.
-8. Corregir un detalle con una rama `hotfix/`.
+~~~text
+http://localhost:3000/api/estado
+~~~
 
 ## Autores
 
-- Plantilla para estudiantes de Ingeniería de Software.
-- Docente responsable: ajustar según el curso.
+- Paula Camila Acosta Alvarado 2220231020 - Estudiante
 
 ## Flujo de trabajo Git
 
-La práctica usa una versión guiada de Git Flow:
+Durante la práctica se usará Git Flow:
 
-- `main`: rama estable.
-- `develop`: rama de integración.
-- `feature/readme-base`: rama para crear el README inicial.
-- `feature/documentacion-extra`: rama para mejorar la documentación.
-- `release/v1.0.0`: rama de preparación de versión.
-- `hotfix/readme-typo`: rama para una corrección menor.
+- main: rama principal y estable.
+- develop: rama de integración.
+- feature/readme-base: rama para crear la primera versión del README.
+- feature/documentacion-extra: rama para mejorar la documentación.
+- release/v1.0.0: rama para preparar la entrega final.
+- hotfix/readme-typo: rama para corregir un error menor.
 
-Los workflows de GitHub Actions crean y cierran issues automáticamente a medida que el estudiante avanza.
+La versión final se marcará con el tag v1.0.0.

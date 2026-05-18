@@ -55,7 +55,7 @@ http://localhost:3000/api/estado
 
 ## Autores
 
-- Paula Camila Acosta Alvarado 2220231020 - Estudiante
+- Paula Camila Acosta Alvarado - Estudiante
 
 ## Flujo de trabajo Git
 

@@ -45,6 +45,8 @@ Respuesta esperada:
   "mensaje": "API de practica Git Flow funcionando",
   "version": "1.0.0"
 }
+
+stash cambio 
 ~~~
 
 Si usas navegador, abre:

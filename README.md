@@ -10,16 +10,20 @@ La API tiene un endpoint de estado que permite comprobar que el servidor esta fu
 
 ## Instalación
 
-Requisitos:
+Necesitas 
 
 - Node.js 20 o superior.
 - npm.
 
+Instala las dependencias:
+
+- npm install
+
 Pasos:
 
 ~~~bash
-git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git
-cd NOMBRE_DEL_REPO
+git clone https://github.com/paulacc09/GitFlow
+cd GitFlow
 npm install
 ~~~
 
@@ -45,6 +49,8 @@ Respuesta esperada:
   "mensaje": "API de practica Git Flow funcionando",
   "version": "1.0.0"
 }
+
+stash cambio 
 ~~~
 
 Si usas navegador, abre:

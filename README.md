@@ -55,7 +55,7 @@ stash cambio
 
 Si usas navegador, abre:
 
-~~~text
+~text
 http://localhost:3000/api/estado
 ~~~
 

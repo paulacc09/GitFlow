@@ -61,7 +61,7 @@ http://localhost:3000/api/estado
 
 ## Autores
 
-- Paula Camila Acosta - Estudiante
+- Paula Camila Acosta Alvarado - Estudiante
 
 ## Flujo de trabajo Git
 
